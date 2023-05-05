@@ -26,8 +26,16 @@ function Home() {
 
             </div>
             <div className='home__navbar-sign'>
-                <p>Sign in</p>
-                <button type='button'>Sign up</button>
+                <p>
+                    <Link to="/login">
+                        Sign in
+                     </Link>
+                </p>
+                <button type='button'>
+                    <Link to="signup">
+                        Sign up
+                    </LinK>
+                </button>
             </div>
             <div className='home__navbar-menu'>
                 {toggleMenu
@@ -46,7 +54,6 @@ function Home() {
                     </div>
                 )}
             </div>
-
         </div>
         <div className='information  section__margin'>
             <h3><strong>Important information!</strong></h3> <hr />
