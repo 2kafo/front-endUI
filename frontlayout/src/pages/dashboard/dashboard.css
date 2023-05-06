@@ -1,0 +1,49 @@
+
+.clearfix {
+    overflow: auto;
+}
+
+.container {
+    margin: 0;
+
+}
+
+
+.section {
+
+    color: rgb(191, 191, 81);
+    margin-left: 16rem;
+
+
+}
+
+
+.project{
+    margin: 1rem 3rem;
+    
+}
+.project table {
+    width: 98%;
+    color: rgb(196, 196, 81); 
+    border-collapse: collapse;
+}
+.project th{
+    text-align: left;
+    padding: .8rem;
+    border-bottom: 3px solid rgb(191, 191, 81);
+    background:rgb(41, 41, 7);
+}
+.project table  td{
+    text-align: left;
+    padding: .8rem;
+    border-bottom: 1px solid rgb(191, 191, 81);
+}
+.project tr:hover{
+    background: rgb(41, 41, 7);
+    color: rgb(191, 191, 81);
+}
+.home{
+    margin: 4rem 3rem;
+}
+
+

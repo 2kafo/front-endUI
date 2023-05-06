@@ -1,18 +1,17 @@
 
-
 .container {
     margin: 0;
     text-align:center;
 }
 
 .form {
-    background: var(--color-bg);
+    background: rgb(41, 41, 7);
     width: 40%;
-    padding:2rem 1rem;
+    padding:3rem 2rem;
     margin: auto;
-    margin-top: 9rem;
+    /* margin-top: 9rem; */
     border-radius: 1rem;
-    color: var(--color-text);
+    color: rgb(196, 196, 81);
 }
 
 .form-group {
@@ -35,17 +34,12 @@
     color: rgb(196, 196, 81);
     background: rgb(10, 10, 2);
     width: 8rem;
-    margin-right: 14rem;
-    margin-left:0;
-    
+   
     
 }
-.form-group a{
+button a{
     color: rgb(196, 196, 81);
-}
-.form-group p{
-    color: rgb(196, 196, 81);
-    text-align: left;
+   
 }
 h6{
     display: inline;

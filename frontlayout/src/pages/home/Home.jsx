@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import './home.css';
 import { RiMenu3Line, RiCloseLine } from "react-icons/ri";
+import { Link } from "react-router-dom";
+
 
 
 //BEM block element modifier
@@ -8,9 +10,9 @@ import { RiMenu3Line, RiCloseLine } from "react-icons/ri";
 const Menu = () => (
     <>
         <p>
-          <button type='button'>Sign up</button>  
+          <button type='button'> <a href="/signup">Sign up</a> </button>  
         </p>
-        <p>Sign in</p>
+        <p><a href="/login">Sign in</a></p>
 
     </>
 )
@@ -26,16 +28,8 @@ function Home() {
 
             </div>
             <div className='home__navbar-sign'>
-                <p>
-                    <Link to="/login">
-                        Sign in
-                     </Link>
-                </p>
-                <button type='button'>
-                    <Link to="signup">
-                        Sign up
-                    </LinK>
-                </button>
+                <p><a href="/login">Sign in</a></p>
+                <button type='button'><a href="signup">Sign up</a></button>
             </div>
             <div className='home__navbar-menu'>
                 {toggleMenu
@@ -47,13 +41,17 @@ function Home() {
                         <div className='home__navbar-menu_container-link'>
                             <Menu />
                             <div className='home__navbar-menu_container-links-sign'>
-                                <p><a href="/login">Sign in</a></p>
-                                <button type='button'>Sign up</button>
+                                {/* <a href="/login">Sign in</a> */}
+                                <Link to="/login">Sign in</Link>
+                                
+                                <Link className="link" to="/signup"><button>Sign up</button></Link>
+                                 
                             </div>
                         </div>
                     </div>
                 )}
             </div>
+
         </div>
         <div className='information  section__margin'>
             <h3><strong>Important information!</strong></h3> <hr />

@@ -1,0 +1,47 @@
+.sidebar {
+    width: 16rem;
+    background: rgb(19, 19, 2);
+    text-align: center;
+    display: inline;
+    float: left;
+    left: 0px;
+    top: 0;
+    color: rgb(191, 191, 81);
+    height: 100%;
+    position: fixed;
+
+}
+
+
+
+.sidebar h3 {
+    margin: 1rem auto;
+}
+
+.sidebar hr {
+    margin-bottom: 0;
+}
+
+.navigation ul {
+    list-style: none;
+    
+    padding: 0rem;
+    color: rgb(191, 191, 81); 
+    margin: 0;
+}
+
+.navigation ul li a{
+    padding: .5rem 1rem;
+    display: block;
+    text-decoration: none;
+    border-bottom: 1px solid #555;
+}
+li:hover {
+    background: rgb(191, 191, 81);
+    color: rgb(137, 137, 58);
+}
+@media screen and (max-width:608px){
+    .sidebar{
+        width: 13rem;
+    }
+}
